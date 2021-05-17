@@ -7,7 +7,7 @@ console.log("Servidor ejecutandose...");
 
 http.createServer((request, response) => {
   console.log(request.url);
-  const file = request.url == '/' ? "./www/index.html" : `./www${request.url}`;
+  const file = request.url == '/' ? "./index.html" : `.${request.url}`;
 
 //checa si es un sitio dinamico como un login
   if(request.url == '/login'){
