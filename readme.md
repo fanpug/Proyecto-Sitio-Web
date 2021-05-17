@@ -60,7 +60,7 @@ node app.js
 
 
 ### Docker
-Repositorio de docker para descargar la [imagen](https://hub.docker.com/repository/docker/fanpug/app-server).
+Repositorio de docker para descargar la [imagen](https://hub.docker.com/r/fanpug/app-sitio-web).
 
 ## Construido con
 * Nano - Editor de texto
