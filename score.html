@@ -4,14 +4,6 @@
     <meta charset="utf-8">
     <title>Score</title>
     <script>
-      const fs = require('fs');
-      let data = "Tu puntuacion fue impresionante, tal vez!";
-      fs.writeFile('/score.txt', data, (err) => {
-          if (err) throw err;
-      });
-    </script>
-
-    <script>
       function pageRedirect() {
           window.location.replace("/test.html");
       }

@@ -9,15 +9,10 @@ http.createServer((request, response) => {
   console.log(request.url);
   const file = request.url == '/' ? "./index.html" : `.${request.url}`;
 
-  if(request.url == '/login'){
-      let data = [];
-      request.on("data",value => {
-        data.push(value);
-      }).on("end",()=>{
-        let params = Buffer.concat(data).toString();
-        console.log(params);
-        response.write(params);
-        response.end();
+  if(request.url == '/score.html'){
+      let data = "Tu puntuacion fue impresionante, tal vez!";
+      fs.writeFile('./score.txt', data, (err) => {
+          if (err) throw err;
       });
     }
 
