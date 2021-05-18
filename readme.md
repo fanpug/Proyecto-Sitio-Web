@@ -10,15 +10,15 @@ Se tiene una empresa llamada “automax” de renta de autos que quiere promocio
 
 2. Crear un sitio web que se hospede en el servidor que contenga lo siguiente:
 
- a) Landing page que presente a la empresa y los vehículos que tiene disponibles. (10 puntos)
+    a) Landing page que presente a la empresa y los vehículos que tiene disponibles. (10 puntos)
 
- b) Pagina web de contacto con los datos para ubicar a la empresa. (10 puntos)
+    b) Pagina web de contacto con los datos para ubicar a la empresa. (10 puntos)
 
- c) Página web “acerca de ” con los datos de la empresa (ej. Misión, visión, etc.)  (10 puntos)
+    c) Página web “acerca de ” con los datos de la empresa (ej. Misión, visión, etc.)  (10 puntos)
 
- d) Página web de detalle de los primeros 3 vehículos.  (15 puntos)
+    d) Página web de detalle de los primeros 3 vehículos.  (15 puntos)
 
- e) Formulario de contacto que almacene en el servidor en un archivo de texto la información. (15 puntos)
+    e) Formulario de contacto que almacene en el servidor en un archivo de texto la información. (15 puntos)
 
 3. Al terminar convierta el servidor y el sitio web en una imagen de Docker publicada en Docker hub. (20 puntos)
 
