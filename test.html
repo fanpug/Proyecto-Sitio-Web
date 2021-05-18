@@ -15,6 +15,7 @@
   <script type="text/javascript" src="script/elevator.js"></script>
   <script type="text/javascript" src="script/lib/sdkSounCloud.js"></script>
   <script type="text/javascript" src="script/wid.js"></script>
+
 </head>
 
 <body>
@@ -67,7 +68,7 @@
           </dd>
       </article>
       <article id="ArtTwo">
-        <form action="" method="post" id="testFrm">
+        <form action="/score" method="post" id="testFrm">
           <legend>Que tan otaku eres?</legend>
           <p>
             1-Has ido a japon alguna ves?
@@ -257,6 +258,7 @@
           <br>
           <br>
           <br>
+          <input type="submit" name="Enviar" value="Enviar Puntuacion">
 
         </form>
       </article>
@@ -309,6 +311,7 @@
       }
     }
   </script>
+
   <!-- Script para añadir elevador a la pagina -->
   <script>
     // Elevator script included on the page, already.
@@ -321,6 +324,9 @@
     }
     elevator.elevate();
   </script>
+
+
+
 </body>
 
 </html>

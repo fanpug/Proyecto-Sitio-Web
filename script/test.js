@@ -1,8 +1,12 @@
 $(document).ready(function(e) {
+  //var fs = require("fs");
 
   $('#testFrm').change(function() {
-//declaracion de variables
-    var obj = {};
+    let data = "";
+
+
+    //declaracion de variables
+    //var obj = {};
     var string = '';
     var sum = 0;
 
@@ -78,8 +82,12 @@ $(document).ready(function(e) {
     }
 
 
-//imprecion del resultado de la suma 
+//impresion del resultado de la suma
     $('#resultado').val(sum);
+    data = sum;
+    console.log(data);
+    
+
 
   });
 

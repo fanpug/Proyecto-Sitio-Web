@@ -9,22 +9,17 @@ http.createServer((request, response) => {
   console.log(request.url);
   const file = request.url == '/' ? "./index.html" : `.${request.url}`;
 
-//checa si es un sitio dinamico como un login
   if(request.url == '/login'){
-    let data = [];
-    let params;
-
-    request.on("data", value =>{
-      data.push(value);
-
-    }).on("end", ()=>{
-      params = Buffer.concat(data).toString();
-      console.log(params);
-      response.write(params);
-      response.end();
-
-    });
-  }
+      let data = [];
+      request.on("data",value => {
+        data.push(value);
+      }).on("end",()=>{
+        let params = Buffer.concat(data).toString();
+        console.log(params);
+        response.write(params);
+        response.end();
+      });
+    }
 
 
   fs.readFile(file, (error, data) => {
