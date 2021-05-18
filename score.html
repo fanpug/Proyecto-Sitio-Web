@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Score</title>
+    <script>
+      const fs = require('fs');
+      let data = "Tu puntuacion fue impresionante, tal vez!";
+      fs.writeFile('/score.txt', data, (err) => {
+          if (err) throw err;
+      });
+    </script>
+
+    <script>
+      function pageRedirect() {
+          window.location.replace("/test.html");
+      }
+      setTimeout("pageRedirect()", 2000);
+    </script>
+  </head>
+  <body>
+    <p>Puntuacion enviada! Redireccionando...</p>
+  </body>
+</html>

@@ -6,7 +6,7 @@ $(document).ready(function(e) {
 
 
     //declaracion de variables
-    //var obj = {};
+    var obj = {};
     var string = '';
     var sum = 0;
 
@@ -86,7 +86,7 @@ $(document).ready(function(e) {
     $('#resultado').val(sum);
     data = sum;
     console.log(data);
-    
+
 
 
   });
