@@ -22,7 +22,7 @@ http.createServer((request, response) => {
       response.writeHead(404, {
         "Content-Type": "text/plain"
       });
-      response.write("Not Found madafacka");
+      response.write("Not Found MADAFAKA");
       response.end();
     } else {
       //si tenemos la cadena "hola.como estas" i hacemos un split de esta

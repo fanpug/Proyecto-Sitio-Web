@@ -1,4 +1,4 @@
-FROM alpine
+FROM node:lts-alpine
 
 #autor de la imagen
 MAINTAINER Humberto Navarro
@@ -12,14 +12,13 @@ RUN apk add --no-cache bash
 #corre el comando para descargar nodejs al contenedor
 RUN apk add --no-cache nodejs
 
-#copia el archivo principal a una nueva carpeta app dentro del contenedor
-COPY ./app.js /app/
+#copia los archivos principales a una nueva carpeta app dentro del contenedor
+WORKDIR /app
 
-#copia los archivos de la carpeta en una nueva carpeta dentro del contenedor
-COPY ./* /app/
+COPY . .
 
-#basicamente es el comando node app.js que normalmente utilizamos
-CMD ["/usr/bin/node", "/app/app.js"]
-
-#abre el puerto 8888
+##abre el puerto 8888
 EXPOSE 8888
+
+##basicamente es el comando node app.js que normalmente utilizamos
+CMD ["/usr/bin/node", "/app/app.js"]

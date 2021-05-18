@@ -33,13 +33,13 @@ Puntos importantes:
 
 
 ## Prerequisitos
-Para ejecutar los programas en la terminal de linux para su facil ejecucion se debe de contar con alguna version de Node.js.
+Para ejecutar los programas en la terminal de linux para su facil ejecucion se debe de contar con alguna version de Node.js y Docker.
 
 A continuacion se describen los pasos para descargar e instalar los programas necesarios.
 
 
 ### Instalando
-Para actualizar a las ultimas versiones de Node.js, se pueden utilizar los siguientes comandos:
+Para actualizar a las ultimas versiones de Node.js y Docker, se pueden utilizar los siguientes comandos:
 ```
 sudo apt-get update
 ```
@@ -52,16 +52,41 @@ Para descargar e instalar Node.js se puede utilizar el siguiente comando en la t
 sudo apt-get install nodejs
 ```
 
+Necesitamos instalar Docker para correr un contenedor con la imagen que contiene nuestro sitio web. Para descargar e instalar Docker se deben seguir los siguientes pasos:
+1. Actualizar los paquetes APT locales con el comando
+```
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+```
+2. Anadir la llave GPG
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
+3. Instalar el motor de docker con el comando
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
 
 ## Corriendo pruebas
-Para correr el servidor se ejecuta el siguiente comando en la terminal de linux:
+Para correr el servidor por si solo se ejecuta el siguiente comando en la terminal de linux:
 ```
 node app.js
 ```
-
+Una vez que el servidor se este ejecutando, se puede verificar que el sitio web esta activo al ir a la siguiente direccion dentro del navegador:
+```
+http://localhost:8888/
+```
+Que nos llevara a la pagina principal del sitio web.
 
 ### Docker
 Repositorio de docker para descargar la [imagen](https://hub.docker.com/r/fanpug/app-sitio-web).
+Para correr el servidor por medio de docker se debe ejecutar el siguiente comando para crear un contenedor con la imagen de nuestro servidor:
+
 
 ## Construido con
 * Nano - Editor de texto
