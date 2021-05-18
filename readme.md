@@ -6,7 +6,7 @@ Utilizando los conocimientos adquiridos en la unidad, vamos a crear nuestro prim
 
 Se tiene una empresa llamada “automax” de renta de autos que quiere promocionar sus unidades por internet, para esto la empresa tiene al rededor de 25 autos de los cuales cuenta con modelo, año, marca y precio por día de renta.
 
-1. Crear un servidor web que se ejecute sobre el puerto 8888 . (20 puntos)
+1. Crear un servidor web que se ejecute sobre el puerto 8888. (20 puntos)
 
 2. Crear un sitio web que se hospede en el servidor que contenga lo siguiente:
 
@@ -19,6 +19,7 @@ Se tiene una empresa llamada “automax” de renta de autos que quiere promocio
  d) Página web de detalle de los primeros 3 vehículos.  (15 puntos)
 
  e) Formulario de contacto que almacene en el servidor en un archivo de texto la información. (15 puntos)
+
 3. Al terminar convierta el servidor y el sitio web en una imagen de Docker publicada en Docker hub. (20 puntos)
 
 Entrega un repositorio en GitHub (debe contener archivo readme con los integrantes del equipo y descripción de cómo funciona) y la liga de la imagen en Docker hub. Cada miembro del equipo deberá entregar ambas ligas en su Moodle.

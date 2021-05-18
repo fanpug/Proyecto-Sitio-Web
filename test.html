@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ANCOBO-TEST</title>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="stylesheet/myStyle.css">
+  <link rel="stylesheet" href="stylesheet/menuFijo.css">
+  <link rel="stylesheet" href="stylesheet/test.css">
+  <script type="text/javascript" src="script/lib/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="script/menu.js"></script>
+  <script type="text/javascript" src="script/test.js"></script>
+  <script type="text/javascript" src="script/elevator.js"></script>
+  <script type="text/javascript" src="script/lib/sdkSounCloud.js"></script>
+  <script type="text/javascript" src="script/wid.js"></script>
+</head>
+
+<body>
+  <div id="contenido">
+    <header id="menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="test.html">TEST</a></li>
+          <li><a href="comida.html">Recetas</a></li>
+          <li><a href="cultura.html">Culturisate</a></li>
+          <li><a href="juegos.html">Juegos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="SecPr">
+      <article id="ArtPr">
+        <p>Realiza un test para descubir que tan otaku eres?</p>
+      </article>
+      <aside id="ContExt">
+        <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/112748230&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="400" scrolling="no" frameborder="no"></iframe>
+
+      </aside>
+    </section>
+    <!--Contenido-->
+    <section id="SecOtr">
+      <article id="ArtOne">
+        <h1>RESULTADOS</h1>
+        <dl>
+          <dt>Puntos 0-1 -> NO-FRIKI</dt>
+          <dd>No eres absolutamente nada otaku, pero eso no te debe preocupar en ab- soluto, puesto que hay hobbies mucho más apasionantes, como Cuéntame, las motos y los chupitos de avellana, ¿¿a que si??
+          </dd>
+          <dt>Puntos 2-10 -> FAN</dt>
+          <dd>No te desagrada el manga, pero lo tienes como un pasatiempo más. Quizá necesites rodearte de amistades más frikis y dejarte lle- var, serás más feliz, creeme ^^!!
+          </dd>
+          <dt>Puntos 11-19 -> OTAKU</dt>
+          <dd>Oficialmente eres lo que se considera otaku en occidente. Vives el mundillo intensamente pero casi sin ningún gran exceso. Todavia eres una persona que se puede integrar bien en la sociedad...
+          </dd>
+          <dt>Puntos 20-28 -> FRIKI</dt>
+          <dd>Un Otaku de alto nivel. Llegados a este punto, la escalada de frikismo hacia arriba suele ser bastante habi- tual, pero ten cuidado con pasarte de la raya porque algunas cosas estan penadas por la ley...
+          </dd>
+          <dt>Puntos 29-37 -> SUPERFRIKI</dt>
+          <dd>El frikismo es muy intenso en ti. Se podria decir que en la mayo- ria de decisiones que tomas son influenciadas por el manga o los videojuegos, lo cual no tengo ni idea de si es bueno o malo!
+          </dd>
+          <dt>Puntos 38-45 -> KAMI-SAMA</dt>
+          <dd>Eres un autentico mons- truo de la pradera. Das miedo. Yo de ti me plan- tearia seriamente lo de vivir en Japón (si es que no estas ahi ya).
+          </dd>
+          <dt>Puntos 46 -> OTAKING</dt>
+          <dd>Fecilidades, te has convertido en una leyenda viva por méritos propios. Tan solo te queda conceder entrevistas y entrar a formar parte de la nueva edición de carne y hueso de "Otaku no video".
+          </dd>
+      </article>
+      <article id="ArtTwo">
+        <form action="" method="post" id="testFrm">
+          <legend>Que tan otaku eres?</legend>
+          <p>
+            1-Has ido a japon alguna ves?
+          </p>
+          <input type="radio" name="pregunta1" value="0">
+          <label>No, ni ganas, está muy lejos y es muy caro</label>
+          <br>
+          <input type="radio" name="pregunta1" value="1">
+          <label>Todavia no pero espero ir algundia</label>
+          <br>
+          <input type="radio" name="pregunta1" value="4">
+          <label>He ido una vez o ire en breve</label>
+          <br>
+          <input type="radio" name="pregunta1" value="6">
+          <label>He ido mas de dos veces</label>
+          <br>
+          <p>
+            2- Cual es tu nivel de japones?
+          </p>
+          <input type="radio" name="pregunta2" value="0">
+          <label>De baka no paso ^U^</label>
+          <br>
+          <input type="radio" name="pregunta2" value="1">
+          <label>Se leer bastantes hiraganas o katakanas y entiendo algunas palabras</label>
+          <br>
+          <input type="radio" name="pregunta2" value="2">
+          <label>Se leer los dos silabarios y algunos pocos kanjis</label>
+          <br>
+          <input type="radio" name="pregunta2" value="3">
+          <label>Se más de 100 kanjis perfectamente</label>
+          <br>
+          <input type="radio" name="pregunta2" value="4">
+          <label>Se más de 200 kanjis perfectamente</label>
+          <br>
+          <p>
+            3- Cuantas coleciones de manga tienes?
+          </p>
+          <input type="radio" name="pregunta3" value="0">
+          <label>Ninguna</label>
+          <br>
+          <input type="radio" name="pregunta3" value="1">
+          <label>1-2</label>
+          <br>
+          <input type="radio" name="pregunta3" value="3">
+          <label>3-4</label>
+          <br>
+          <input type="radio" name="pregunta3" value="4">
+          <label>5 o mas</label>
+          <br>
+          <p>4- Cuantos DVD de anime/pelicual compras cada mes?</p>
+          <input type="radio" name="pregunta4" value="0">
+          <label>0</label>
+          <br>
+          <input type="radio" name="pregunta4" value="1">
+          <label>1</label>
+          <br>
+          <input type="radio" name="pregunta4" value="2">
+          <label>2-3</label>
+          <br>
+          <input type="radio" name="pregunta4" value="3">
+          <label>4 o mas</label>
+          <br>
+          <p>5- Cuantos videojuegos compras cada mes?</p>
+          <input type="radio" name="pregunta5" value="0">
+          <label>0</label>
+          <br>
+          <input type="radio" name="pregunta5" value="2">
+          <label>1</label>
+          <br>
+          <input type="radio" name="pregunta5" value="3">
+          <label>2</label>
+          <br>
+          <input type="radio" name="pregunta5" value="4">
+          <label>3 o mas</label>
+          <br>
+          <p>6- Ha salido en DVD una pelicual que te gusta mucho pero sabes que de aqui a 6 meses saldra la edicion especial que haces?</p>
+          <input type="radio" name="pregunta6" value="0">
+          <label>Me lo copio o lo bajo de internet</label>
+          <br>
+          <input type="radio" name="pregunta6" value="1">
+          <label>Me compro solo la edicion normal</label>
+          <br>
+          <input type="radio" name="pregunta6" value="2">
+          <label>Me espero pacientemente y compro la especial</label>
+          <br>
+          <input type="radio" name="pregunta6" value="4">
+          <label>Me compro las dos faltaria mas</label>
+          <br>
+          <p>7- Empiesas a salir con tu pareja y descubres que no le gusta ni el manga ni vieojuegos como reacionas</p>
+          <input type="radio" name="pregunta7" value="0">
+          <label>Te alegras por que por fin te relacionas con no-friki</label>
+          <br>
+          <input type="radio" name="pregunta7" value="1">
+          <label>Que sele va hacer lo improtante es amar ^O^</label>
+          <br>
+          <input type="radio" name="pregunta7" value="2">
+          <label>Intentas llevarlo al lado oscuro de manera sutil</label>
+          <br>
+          <input type="radio" name="pregunta7" value="4">
+          <label>Es imposible no tendre una pareja no friki</label>
+          <br>
+          <p>8- Has realizado coslpay?</p>
+          <input type="radio" name="pregunta8" value="0">
+          <label>Que es eso?</label>
+          <br>
+          <input type="radio" name="pregunta8" value="1">
+          <label>NO, pero me gustaria</label>
+          <br>
+          <input type="radio" name="pregunta8" value="2">
+          <label>No, pero algun dia pineso ir</label>
+          <br>
+          <input type="radio" name="pregunta8" value="3">
+          <label>Si ^^</label>
+          <br>
+          <input type="radio" name="pregunta8" value="4">
+          <label>Si cada año para la conve ^_____^</label>
+          <br>
+          <p>9- Tienes problemas para poner el frikismo en tu cuarto?</p>
+          <input type="radio" name="pregunta9" value="0">
+          <label>Que va tengo los estanterias vacia</label>
+          <br>
+          <input type="radio" name="pregunta9" value="1">
+          <label>Algun hueco debe de quedar</label>
+          <br>
+          <input type="radio" name="pregunta9" value="3">
+          <label>Tengo que apilar los mangas en el suelo</label>
+          <br>
+          <p>10- Tienes mobil de estilo japones?</p>
+          <input type="radio" name="pregunta10" value="0">
+          <label>No me gustan nada</label>
+          <br>
+          <input type="radio" name="pregunta10" value="1">
+          <label> Me gustaria pero son muy caros</label>
+          <br>
+          <input type="radio" name="pregunta10" value="2">
+          <label>En cuanto pueda me compro el NEC</label>
+          <br>
+          <input type="radio" name="pregunta10" value="3">
+          <label>Por supuesto y con un strap bien bonito</label>
+          <br>
+          <p>11- Estas leyendo un manga shojo en el tren y unos tipos se rien de ti que haces?</p>
+          <input type="radio" name="pregunta11" value="0">
+          <label>Te averguensas y cambias de vagon disimuladamente</label>
+          <br>
+          <input type="radio" name="pregunta11" value="1">
+          <label>Te pones colorado pero sigues leyendo</label>
+          <br>
+          <input type="radio" name="pregunta11" value="2">
+          <label>Perdonlaes señor por que nos saven lo que se pierden</label>
+          <br>
+          <p>12- Mañana es sabado del salon del manga y te llaman de la empresa/escuela que mañana tienes que ira trbajar/estudiar ese dia que haces?</p>
+          <input type="radio" name="pregunta12" value="0">
+          <label>Te da igual y vas a trabajar</label>
+          <br>
+          <input type="radio" name="pregunta12" value="1">
+          <label>Les das una excusa para al menos ir en la tarde</label>
+          <br>
+          <input type="radio" name="pregunta12" value="0">
+          <label>Les dices que no vas por el sabado de salon de manga es sagrado</label>
+          <br>
+          <p>13- Te gustaria vivir en japon?</p>
+          <input type="radio" name="pregunta13" value="0">
+          <label>Para nada tiene que se horroroso trabajar todo el dia y hacer reverencias</label>
+          <br>
+          <input type="radio" name="pregunta13" value="2">
+          <label>Si, pero es muy dificil</label>
+          <br>
+          <input type="radio" name="pregunta13" value="4">
+          <label>Ese es el sentido de mi existencia</label>
+          <br>
+          <p>14- Crees que los japos son.....</p>
+          <input type="radio" name="pregunta14" value="0">
+          <label>Bajitos copiones, prevertidos y racistas</label>
+          <br>
+          <input type="radio" name="pregunta14" value="1">
+          <label>Son raros pero mientras hagan mangakares de 9 pisos</label>
+          <br>
+          <input type="radio" name="pregunta14" value="2">
+          <label>Son educados, inteligentes, civilizados y frikis por naturaleza</label>
+          <br>
+          <input type="radio" name="pregunta14" value="3">
+          <label>Son una raza superior</label>
+          <br>
+          <br>
+          <br>
+          <label>Consulta tu puntaje en la tabla de la derecha</label>
+          <br>
+          <br>
+          <br>
+
+        </form>
+      </article>
+      <article id="ArtThr">
+        <h1>Puntaje</h1>
+        <p>
+          Este es el puntaje obtenido:
+        </p>
+        <input type="text" name="resultado" id="resultado" disabled="disabled" value="0">
+        <br>
+        <br>
+      </article>
+    </section>
+      <p>
+        <img class="elevator-button" src="img/flecha.png" alt="arriba"/>
+      </p>
+    <footer>
+      <p>
+        Copyright (c) 2021 Sergio Armando Rodriguez Nava 281854, Humberto Alejandro Navarro Andujo 320669 y Kevin López Venegas 306007. Todos los derechos reservados.
+      </p>
+    </footer>
+  </div>
+  <!-- Script para añadir chat de chatango a la pagina -->
+  <script id="cid0020000094043455113" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 187px;height: 372px;">
+    {
+      "handle": "ancobo",
+      "arch": "js",
+      "styles": {
+        "a": "ff550d",
+        "b": 100,
+        "c": "000000",
+        "d": "000000",
+        "k": "ff550d",
+        "l": "ff550d",
+        "m": "ff550d",
+        "p": "10",
+        "q": "ff550d",
+        "r": 100,
+        "usricon": 0.69,
+        "pos": "br",
+        "cv": 1,
+        "cvfnt": "Consolas, monaco, monospace, sans-serif",
+        "cvfntsz": "1em",
+        "cvfntw": "bold",
+        "cvbg": "ff550d",
+        "cvfg": "000000",
+        "cvw": 75,
+        "cvh": 30,
+        "cnrs": "0.35"
+      }
+    }
+  </script>
+  <!-- Script para añadir elevador a la pagina -->
+  <script>
+    // Elevator script included on the page, already.
+    window.onload = function() {
+      var elevator = new Elevator({
+        element: document.querySelector('.elevator-button'),
+        mainAudio: '/src/to/audio.mp3',
+        endAudio: '/src/to/end-audio.mp3'
+      });
+    }
+    elevator.elevate();
+  </script>
+</body>
+
+</html>

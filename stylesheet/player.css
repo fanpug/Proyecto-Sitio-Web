@@ -1,0 +1,67 @@
+@import url('repro/animation.css');
+@import url('repro/fontello-codes.css');
+@import url('repro/fontello-embedded.css');
+@import url('repro/fontello-ie7.css');
+@import url('repro/fontello-ie7-codes.css');
+@import url('repro/fontello.css');
+
+#ContEx {
+  background: rgba(199, 169, 207, 0.44);
+  
+}
+
+#player {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#player_track {
+    font-family: sans-serif,"Helvetica";
+    font-weight: 300;
+}
+
+#player_artwork a img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#player_track_title a {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+#player_track_artist {
+    color: #999;
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#player_buttons ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    width: 90px;
+    margin: 0 auto;
+}
+
+#player_buttons ul li {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+#player_buttons ul li a {
+    font-size: 1.2em;
+    color: #FFF;
+}
+
+#player_buttons ul li a:hover {
+    color: #000;
+}
