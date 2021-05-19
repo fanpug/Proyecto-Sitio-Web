@@ -1,5 +1,5 @@
 # Proyecto del Segundo Parcial | Mi Primer Sitio Web
-Este repositorio fue creado para la practica en clase 3.4 de la materia de Desarrollo Basado en Plataformas por Humberto Alejandro Navarro Andujo.
+ Repositorio creado para el Proyecto del Segundo Parcial de la materia de DEBAPLA por el equipo dinamita. 
 
 ## Descripción de los problemas
 Utilizando los conocimientos adquiridos en la unidad, vamos a crear nuestro primer sitio web para esto toma en cuenta el siguiente problema:
