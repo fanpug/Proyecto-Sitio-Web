@@ -79,14 +79,32 @@ node app.js
 ```
 Una vez que el servidor se este ejecutando, se puede verificar que el sitio web esta activo al ir a la siguiente direccion dentro del navegador:
 ```
-http://localhost:8888/
+localhost:8888/
 ```
 Que nos llevara a la pagina principal del sitio web.
 
 ### Docker
 Repositorio de docker para descargar la [imagen](https://hub.docker.com/r/fanpug/app-sitio-web).
-Para correr el servidor por medio de docker se debe ejecutar el siguiente comando para crear un contenedor con la imagen de nuestro servidor:
 
+Para descargar la imagen del sitio web se puede utilizar el siguiente comando:
+```
+docker pull fanpug/app-sitio-web
+```
+
+Y para correr el servidor por medio de docker se debe ejecutar el siguiente comando para crear un contenedor con la imagen de nuestro servidor:
+```
+docker run -ti --name sitio-web fanpug/app-sitio-web
+```
+
+Ahora para verificar cual es la direccion que debemos introducir en el navegador, podemos abrir otra terminal e inspeccionar el contenedor que creamos con el comando:
+```
+docker inspect sitio-web
+```
+
+Buscamos la direccion IP del contenedor corriendo y la introducimos con el puerto 8888, por ejemplo:
+```
+172.17.0.2:8888/
+```
 
 ## Construido con
 * Nano - Editor de texto
