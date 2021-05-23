@@ -9,13 +9,13 @@ http.createServer((request, response) => {
   console.log(request.url);
   const file = request.url == '/' ? "./index.html" : `.${request.url}`;
 
-  if(request.url == '/score.html'){
-      let data = "Tu puntuacion fue impresionante, tal vez!";
-      fs.writeFile('./score.txt', data, (err) => {
-          if (err) throw err;
-      });
-    }
-
+  if (request.url == '/score.html') {
+    let data = "Tu puntuacion fue impresionante, tal vez!";
+    fs.writeFile('./score.txt', data, (err) => {
+      if (err) throw err;
+    });
+  }
+  
 
   fs.readFile(file, (error, data) => {
     if (error) {
@@ -61,7 +61,7 @@ http.createServer((request, response) => {
           });
           break;
 
-          case 'ico':
+        case 'ico':
           response.writeHead(200, {
             "Content-Type": "image/x-icon"
           });
@@ -76,6 +76,12 @@ http.createServer((request, response) => {
         case 'js':
           response.writeHead(200, {
             "Content-Type": "text/javascript"
+          });
+          break;
+
+        case 'json':
+          response.writeHead(200, {
+            "Content-Type": "application/json"
           });
           break;
 
